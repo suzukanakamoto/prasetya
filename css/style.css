@@ -158,7 +158,8 @@ body {
 
 .about h2,
 .menu h2,
-.contact h2 {
+.contact h2,
+.project h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -166,7 +167,8 @@ body {
 
 .about h2 span,
 .menu h2 span,
-.contact h2 span {
+.contact h2 span,
+.project h2 span {
   color: var(--primary);
 }
 
@@ -199,6 +201,85 @@ body {
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.6;
+}
+
+/* Product */
+.project {
+  padding: 8rem 7% 1.4rem;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.project .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.project .row .about-img img {
+  width: 100%;
+  height: auto;
+}
+
+.project .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.project .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Menu Section */
