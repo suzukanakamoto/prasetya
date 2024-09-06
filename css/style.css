@@ -223,6 +223,14 @@ body {
 .slide {
   min-width: 100%;
   box-sizing: border-box;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+.active {
+  display: block;
+  opacity: 1;
 }
 
 .project .row {
